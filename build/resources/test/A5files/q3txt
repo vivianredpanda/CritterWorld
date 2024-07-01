@@ -1,0 +1,21 @@
+memsize: 13
+defense: 1
+offense: 1
+size: 1
+energy: 100
+posture: 17
+
+-mem[10] = 5 → mem[11] := mem[7] mem[7]:= (mem[7] + 1) mem[10] := 0 wait;
+-//checks if critter has gone forward in one direction in this one distance 5 times, sets the lesser forward to the current amount & increases current amount
+mem[9] =1 and mem[7] > 1 → mem[12] := 1 wait;
+//the moves one longer once and then backs up to the lesser forward
+mem[12] :=1 and mem[13] < mem[11]→ mem[13]:=(mem[13] + 1) forward;
+//to do the lesser forward
+mem[13] = mem[11] → mem[12] := 0 left;-
+//once lesser forward is done, turn and go bac-k to normal forward
+mem[7] = 0 → mem[7] := 1 mem[9] := 1 forward;-
+//at the beginning: sets amount to go forward without turning to 1-, number of times doing this to 1, goes forward
+mem[9] < mem[7] and mem[12] != 1→ mem[9] := (mem[9] + 1) forward;-
+//as long as number of times going forward in this one direction is smaller than the number of times its supposed to go, go forward and increase the number of times gone
+mem[9] >= mem[7] and mem[12] != 1 → mem[9]:=0 mem[10] := (mem[10]+1) left;
+//if number of times going forward in this direction is equal to the number of times it’s supposed to, reset the number of times gone forward, increase the one directional forward, and turn left

@@ -1,0 +1,5 @@
+mem[4] > 2500 --> bud;
+mem[3*(1+2)] != 17 --> mem[6] := 17;//hi this is a test comment
+{mem[4] > mem[3] * 400 and mem[3] < 7} --> grow;
+ahead[1] < -1 and mem[4] < 500 * mem[3] --> eat;
+(ahead[1] / 10 mod 100) != 17 and ahead[1] > 0 --> attack;

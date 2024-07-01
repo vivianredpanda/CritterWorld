@@ -1,0 +1,8 @@
+species: critter2
+memsize: 10
+defense: 1
+offense: 2
+size: 2
+energy: 1
+posture: 2
+smell > 1 --> grow;

@@ -1,0 +1,29 @@
+//ignore comment
+
+name matsci
+size 50 50
+
+rock 4 6 10
+food 2 4 10
+food 1 3 9
+food 13 9 20
+food 0 0 1
+food 14 8 8
+
+critter space_critter.txt 4 2 0
+critter space_critter.txt 4 4 3
+
+critter q3.txt 6 4 5
+
+critter q2.txt 2 6 3
+critter q3.txt 4 8 5
+
+critter q3.txt 0 2 5
+
+critter q2.txt 0 4 3
+critter q3.txt 0 8 5
+
+critter q2.txt 1 1 3
+
+critter q2.txt 1 5 3
+critter q3.txt 1 7 5

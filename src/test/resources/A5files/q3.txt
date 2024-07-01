@@ -1,0 +1,22 @@
+species: em
+memsize: 16
+defense: 1
+offense: 1
+size: 3
+energy: 100
+posture: 17
+
+ahead[1] < -1 and ENERGY < SIZE * 500 --> eat; // the critter eats food whenever it faces it, even if it's not the next block it's moving onto
+mem[7] = 0 --> mem[7] := 1 mem[9] := 1 mem[14] := 1 forward;
+mem[14] = 1 --> mem[14] := 0 left;
+mem[9] >= mem[7] and mem[12] != 1 --> mem[9]:= 0 mem[10] := (mem[10]+1)  left;
+mem[10] = 5 --> mem[15] := 5 mem[11] := (mem[7]) mem[7]:= (mem[7] + 1) mem[10] := 0 wait;
+
+mem[12] =1 and mem[13] < mem[11] --> mem[13]:=(mem[13] + 1) forward;
+mem[12] = 1 and mem[13] = mem[11] and mem[11]!=0 --> mem[15] := 6 mem[12] := 0 left;
+mem[10] =1 and mem[7] > 1 and mem[15] = 5 --> mem[13] := 0 mem[12] := 1 wait;
+
+
+mem[9] < mem[7] and mem[12] != 1 --> mem[9] := (mem[9] + 1) forward;
+
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.Tooltip?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="341.0" style="-fx-background-color: #E3FAE3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="selectFile" layoutX="131.0" layoutY="11.0" mnemonicParsing="false" style="-fx-background-color: #72c879; -fx-border-color: black;" text="Select File">
+         <tooltip>
+            <Tooltip text="select critter to upload" />
+         </tooltip>
+      </Button>
+      <Line endX="-42.19560241699219" endY="-98.63238525390625" layoutX="213.0" layoutY="168.0" startX="-42.19560241699219" startY="58.02378845214844" />
+      <Button fx:id="uploadCritter" layoutX="124.0" layoutY="245.0" mnemonicParsing="false" style="-fx-background-color: #72c879; -fx-border-color: black;" text="Upload Critter">
+         <tooltip>
+            <Tooltip text="upload critter(s) to world" />
+         </tooltip>
+      </Button>
+      <Text layoutX="48.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="# of Critter" />
+      <TextArea fx:id="numCritter" layoutX="34.0" layoutY="148.0" prefHeight="37.0" prefWidth="100.0">
+         <tooltip>
+            <Tooltip text="number of selected critter to randomly place in world" />
+         </tooltip>
+      </TextArea>
+      <Text layoutX="213.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hex Coordinate" />
+      <Text layoutX="190.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column: " />
+      <TextArea fx:id="column" layoutX="254.0" layoutY="134.0" prefHeight="0.0" prefWidth="36.0">
+         <tooltip>
+            <Tooltip text="column to place critter at" />
+         </tooltip>
+      </TextArea>
+      <Text layoutX="189.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: " />
+      <TextArea fx:id="row" layoutX="255.0" layoutY="184.0" prefHeight="0.0" prefWidth="36.0">
+         <tooltip>
+            <Tooltip text="row to place critter at" />
+         </tooltip>
+      </TextArea>
+      <RadioButton fx:id="radio1" layoutX="33.0" layoutY="67.0" mnemonicParsing="false" />
+      <RadioButton fx:id="radio2" layoutX="181.0" layoutY="67.0" mnemonicParsing="false" />
+   </children>
+</AnchorPane>

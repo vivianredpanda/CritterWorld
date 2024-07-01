@@ -1,0 +1,5 @@
+name world 2
+size 20 20
+rock 2 0
+food 4 8 20
+critter critter1.txt 4 4 0

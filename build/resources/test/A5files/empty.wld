@@ -1,0 +1,9 @@
+//ignore comment
+
+name matsci
+size 100 100
+rock 2 4
+food 3 5 10
+rock 2 2
+
+critter q2.txt 3 3 2

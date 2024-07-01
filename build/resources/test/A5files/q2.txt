@@ -1,0 +1,14 @@
+species: example
+memsize: 9
+defense: 1
+offense: 1
+size: 1
+energy: 100
+posture: 17
+
+//1 > 0 --> forward;
+mem[7] > 0 --> mem[7] := 0 forward;
+ENERGY >= (mem[3]*500 - 100) --> bud;
+smell / 1000 != 1 --> wait;
+smell / 1000 = 1 and ahead[1] >=-1 --> left;
+smell / 1000 = 1 and ahead[1] <-1 --> mem[7] := 1 eat;

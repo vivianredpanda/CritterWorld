@@ -1,0 +1,9 @@
+species: space critter
+memsize: 7
+defense: 1
+offense: 1
+size: 1
+energy: 500
+posture: 0
+
+1 > 0 --> mate;
